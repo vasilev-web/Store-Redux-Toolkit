@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.products {
+  &__filter {
+    margin-bottom: 0px;
+    margin-top: -48px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #d0dee9;
+    padding: 12px 0;
+    z-index: 10;
+
+    &-list {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+
+    &-check {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      align-content: center;
+
+      input[type="checkbox"]{
+        margin: 1px 6px 0px 0px;
+      }
+    }
+
+    &-item {
+      margin-left: 15px;
+      cursor: pointer;
+
+      &--active {
+        color: #07b8f8;
+      }
+
+      &:hover {
+         color: #07b8f8;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

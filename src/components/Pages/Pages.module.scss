@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.products {
+  &__counts {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+
+    &-item {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background: #fff;
+      font-weight: bold;
+      cursor: pointer;
+
+      &--current,
+      &:hover {
+        color: #fff;
+        background-color: #07b8f8;
+      }
+    }
+  }
+}
